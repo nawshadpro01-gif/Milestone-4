@@ -7,10 +7,28 @@
 </head>
 <body>
     <h1>dom</h1>
+    <!-- option 1 for event handler -->
         <button onclick="console.log(7)">click</button>
         <button onclick="console.log(0)">another click</button>
         <button onclick="console.log('I am clicked')">third button</button>
         <input type="text">
+    <br>
+
+    <!-- option 2 for event hadler -->
+     <button onclick="makeRed()">make red</button>
+     <button onclick="makeYellow()">makeYellow</button>
+
+     <br>
+     <button id="btn-make-blue">make blue</button>
+
+     <script>
+        const btnMakeBlue = document.getElementById('btn-make-blue');
+        // console.log(btmMakeBlue);
+        btnMakeBlue.onclick = function makeBlue(){
+            document.body.style.backgroundColor = 'blue';
+        }
+
+     </script>
 
     <script src="./js/events.js"></script>
 </body>
