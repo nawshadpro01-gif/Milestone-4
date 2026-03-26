@@ -23,9 +23,9 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
     <h2>Explore evemt bubble </h2>
-    <section>
+    <section id="section-list">
         <h3>
             List of things
         </h3>
@@ -46,6 +46,14 @@
         document.getElementById('item-list').addEventListener('click', function(){
             console.log('ol clicked')
         })
+        
+        document.getElementById('section-list').addEventListener('click', function(){
+            console.log('section clicked')
+        })
+        document.getElementById('body').addEventListener('click', function(){
+            console.log('body clicked')
+        })
+
     </script>
 </body>
 </html>
